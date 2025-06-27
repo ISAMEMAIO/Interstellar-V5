@@ -324,17 +324,6 @@ function EngineChange(dropdown) {
   dropdown.value = selectedEngine;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const selectedEngineName = localStorage.getItem("enginename");
-  const dropdown = document.getElementById("engine");
-  if (selectedEngineName) {
-    dropdown.value = selectedEngineName;
-  } else {
-    dropdown.value = "Bing"; // Set Bing as default
-    EngineChange(dropdown);  // Save to localStorage
-  }
-});
-
 function SaveEngine() {
   const customEngine = document.getElementById("engine-form").value;
   if (customEngine.trim() !== "") {
