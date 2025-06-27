@@ -339,6 +339,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropdown = document.getElementById("engine");
   if (selectedEngineName) {
     dropdown.value = selectedEngineName;
+  } else {
+    dropdown.value = "Bing"; // Set Bing as default
+    EngineChange(dropdown);  // Save to localStorage
   }
 });
 
