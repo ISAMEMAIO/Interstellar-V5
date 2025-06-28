@@ -33,9 +33,6 @@
    padding-bottom: 12px;
 }
 
-.column:hover {
-   transform: scale(1.2);
-}
 
 .column:hover .label {
    transform: translateX(-50%) scale(1.3);
