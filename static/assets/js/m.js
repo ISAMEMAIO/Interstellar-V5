@@ -28,7 +28,6 @@ if (nav) {
   }
 const html = `
 <div id="icon-container">
-    <a class="icon" href="/./"><img alt="nav" id="INImg" src="${LogoUrl}"/></a>
 </div>
 <div class="fixed-nav-bar-right">
     <a class="navbar-link" href="/./vk"><i class="fa-solid fa-gear navbar-icon settings-icon"></i><an>&#83;&#101;&#116;</an><an>&#116;&#105;&#110;&#103;</an></a>
