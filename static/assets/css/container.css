@@ -10,15 +10,6 @@
    margin: 0;
 }
 
-.column img {
-   position: absolute;
-   width: 145px;
-   height: 145px;
-   border-radius: 0px;
-   transition: all 0.2s ease;
-   border-radius: 10px;
-}
-
 .column p {
    width: 145px;
    height: 19px;
