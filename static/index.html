@@ -6,48 +6,88 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" id="tab-favicon" href="favicon.png" />
-    <title id="t">Home</title>
+    <title id="t">Interstellar</title>
     <link rel="stylesheet" href="/assets/css/global.css?v=6" />
     <link rel="stylesheet" href="/assets/css/h.css?v=01" />
     <link rel="stylesheet" href="/assets/css/nav.css?v=01" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6840529569014734"
-     crossorigin="anonymous"></script>
-  </head>
-  <body class="center" onload="SplashT">
-    <div class="fixed-nav-bar"></div>
-    <div id="particles-js">
-      <script rel="preload" src="https://cdn.jsdelivr.net/particles.js/2.0.0/"></script>
-      <div class="main">
-<h1 class="title">Interstellar</h1>
-        <p id="splash"></p>
-        <div class="search-container">
-          <form id="fv" method="POST">
-            <input
-              id="iv"
-              class="search-home"
-              placeholder="Search or enter a URL"
-              type="text" />
-          </form>
-        </div>
-      </div>
-    </div>
-    <script src="assets/js/i.js?v=02"></script>
-    <script src="/assets/js/home.js?v=00"></script>
-    <script src="./assets/ultra/bundle.js?v=10-02-2024"></script>
-    <script src="./assets/ultra/config.js?v=10-02-2024"></script>
-    <script src="assets/js/f.js"></script>
-    <script src="/assets/js/m.js?v=07"></script>
-    <!-- DO NOT REMOVE-->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
+    <style>
+      body {
+        background: var(--background-color, #101820);
+        margin: 0;
       }
-      gtag("js", new Date())
-
-      gtag("config", "G-WKJQ5QHQTJ")
-    </script>
-    <!-- DO NOT REMOVE-->
+      .main-simple {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        gap: 2em;
+      }
+      .interstellar-title {
+        font-size: 2.5em;
+        font-weight: 800;
+        color: var(--text-primary, #fff);
+        margin: 0.5em 0 0.2em 0;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      .simple-search-form {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        margin-bottom: 1em;
+      }
+      .simple-search-input {
+        padding: 0.8em 1em;
+        font-size: 1.1em;
+        border-radius: 6px;
+        border: none;
+        width: 80vw;
+        max-width: 400px;
+        background: var(--background-input, #222);
+        color: var(--text-primary, #fff);
+        outline: none;
+      }
+      .settings-link {
+        margin-top: 1em;
+        text-align: center;
+      }
+      .settings-link a {
+        font-weight: 600;
+        color: var(--text-primary, #fff);
+        text-decoration: none;
+        background: var(--background-input, #222);
+        padding: 0.5em 1.5em;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+      .settings-link a:hover {
+        background: #444;
+      }
+      @media (max-width:600px) {
+        .interstellar-title { font-size: 2em; }
+        .simple-search-input { font-size: 1em; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-nav-bar"></div>
+    <main class="main-simple">
+      <div class="interstellar-title">Interstellar</div>
+      <form id="fv" class="simple-search-form" method="POST">
+        <input
+          id="iv"
+          class="simple-search-input"
+          placeholder="Search or enter a URL"
+          type="text"
+          autocomplete="off"
+        />
+      </form>
+      <div class="settings-link">
+        <a href="/vk">Settings</a>
+      </div>
+    </main>
+    <script src="/assets/js/i.js?v=02"></script>
+    <script src="/assets/js/m.js?v=07"></script>
   </body>
 </html>
