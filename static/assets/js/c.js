@@ -191,15 +191,10 @@ function CreateCustomApp(customApp) {
   };
   btn.title = "Pin";
 
-  const linkElem = document.createElement("a");
   linkElem.onclick = () => {
     handleClick(customApp);
   };
 
-  const image = document.createElement("img");
-  image.width = 145;
-  image.height = 145;
-  image.src = customApp.image;
   image.loading = "lazy";
 
   const paragraph = document.createElement("p");
@@ -209,9 +204,7 @@ function CreateCustomApp(customApp) {
   }
 
 
-  linkElem.appendChild(image);
   linkElem.appendChild(paragraph);
-  columnDiv.appendChild(linkElem);
   columnDiv.appendChild(btn);
 
   const nonPinnedApps = document.querySelector(".container-apps");
