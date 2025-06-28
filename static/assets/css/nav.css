@@ -40,10 +40,6 @@ img {
    position: fixed;
 }
 
-.fixed-nav-bar .icon:hover {
-   transform: translateY(-15%) scale(1.03);
-   font-weight: 800;
-}
 
 .fixed-nav-bar .icon {
    position: static;
