@@ -46,8 +46,8 @@ img {
 }
 
 .fixed-nav-bar .icon {
-   position: absolute;
-   float: left;
+   position: static;
+   float: none;      
    text-transform: uppercase;
    font-size: 30px;
    font-family: "Inter", sans-serif;
