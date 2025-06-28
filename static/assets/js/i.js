@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
 const form = document.getElementById("fv");
 const input = document.getElementById("iv");
 
+// Attach event listener to the form submit event
 if (form && input) {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -14,7 +15,7 @@ if (form && input) {
   });
 }
 
-function processUrl(value) {
+function processUrl(value, path) {
   let url = value.trim();
   const engine = localStorage.getItem("engine") || "https://www.bing.com/search?q=";
   if (!isUrl(url)) {
